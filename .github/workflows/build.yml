@@ -257,7 +257,7 @@ jobs:
   cargo-clippy:
     if: needs.set-tags.outputs.any_changed == 'true'
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags"]
@@ -285,7 +285,7 @@ jobs:
   build:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags"]
@@ -525,7 +525,7 @@ jobs:
   rust-test:
     if: needs.set-tags.outputs.any_changed == 'true'
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags"]
@@ -610,7 +610,7 @@ jobs:
   dev-test:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags", "build"]
@@ -674,7 +674,7 @@ jobs:
   typescript-tracing-tests:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags", "build", "dev-test"]
@@ -726,7 +726,7 @@ jobs:
   lazy-loading-tests:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     permissions:
       contents: read
     needs: ["set-tags", "build"]
@@ -786,7 +786,7 @@ jobs:
   chopsticks-upgrade-test:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     needs: ["set-tags", "build"]
     strategy:
       fail-fast: false
@@ -834,7 +834,7 @@ jobs:
   zombie_upgrade_test:
     if: ${{ always() && needs.set-tags.outputs.any_changed == 'true' }}
     runs-on:
-      labels: bare-metal
+      labels: ubuntu-latest
     needs: ["set-tags", "build"]
     strategy:
       fail-fast: false
