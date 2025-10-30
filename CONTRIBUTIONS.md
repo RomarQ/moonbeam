@@ -12,8 +12,7 @@ You may also consider joining our [Discord server](https://discord.gg/PfpUATX) o
 ### Generated Documentation
 
 You can explore our [crate-level documentation](https://moonbeam-foundation.github.io/moonbeam).
-This documentation is
-automatically built and reflects the latest `master` commit.
+This documentation is automatically built and reflects the latest `master` commit.
 
 ### Code style
 
@@ -37,7 +36,7 @@ The following is a list of directories of interest in development.
 | docker/                | Dockerfiles for running Moonbeam                                           |
 | moonbeam-types-bundle/ | PolkadotJs types definitions for Moonbeam (typescript)                     |
 | node/                  | Moonbeam's main node (rust)                                                |
-| pallets/               | Moonmeam's Substrate runtime pallets (rust)                                |
+| pallets/               | Moonbeam's Substrate runtime pallets (rust)                                |
 | primitives/            | More Debug & Trace related code (rust)                                     |
 | runtime/               | Moonbeam's runtime (on-chain) code (rust, compiled to WASM)                |
 | scripts/               | Utilities for launching and interacting with a Moonbeam chain (typescript) |
