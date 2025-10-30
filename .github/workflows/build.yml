@@ -613,7 +613,7 @@ jobs:
       labels: ubuntu-latest
     permissions:
       contents: read
-    needs: ["set-tags", "build"]
+    needs: ["set-tags"]
     timeout-minutes: 20
     strategy:
       fail-fast: false
